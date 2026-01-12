@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Enable CORS for all origins
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+Header always set Access-Control-Allow-Headers "Content-Type, Authorization"
+
+# Handle preflight requests
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^(.*)$ $1 [R=200,L]
+
+# PHP configuration
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+php_value max_execution_time 30

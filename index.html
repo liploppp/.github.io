@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alif Nur Imam - Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Work Sans', sans-serif;
+        }
+        
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-scroll {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">A</span>
+                    </div>
+                    <span class="ml-3 text-xl font-bold text-gray-800">Alif</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Beranda</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Tentang</a>
+                    <a href="project.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Proyek</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Kontak</a>
+                </div>
+                
+                <a href="contact.html" class="bg-gradient-primary text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity">
+                    Hubungi Saya
+                </a>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-white rounded-lg shadow-lg mt-2 p-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Beranda</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">Tentang</a>
+                <a href="project.html" class="block py-2 text-gray-700 hover:text-blue-600">Proyek</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-blue-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-800 mb-6">
+                        Halo, Saya
+                        <span class="text-gradient block">Alif Nur Imam</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Saya adalah seorang developer yang passionate dalam teknologi dan selalu eager untuk belajar hal-hal baru. Dengan pengalaman dalam berbagai bahasa pemrograman dan framework, saya senang menciptakan solusi yang efisien dan user-friendly.
+                        <br><br>
+                        Selamat datang di rumah digital saya! Di sini Anda dapat melihat siapa saya, apa yang saya bisa, dan karya-karya yang telah saya buat.
+                    </p>
+                    
+                </div>
+                
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="w-80 h-96 rounded-3xl shadow-2xl overflow-hidden">
+                        <img src="formal.jpeg" alt="Alif Nur Imam" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-gray-800">2+</h3>
+                    <p class="text-gray-600">Tahun Pengalaman</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-gray-800">5+</h3>
+                    <p class="text-gray-600">Proyek Selesai</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-gray-800">6+</h3>
+                    <p class="text-gray-600">Teknologi Dikuasai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">A</span>
+                        </div>
+                        <span class="ml-3 text-xl font-bold">Alif Nur Imam</span>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://github.com/liploppp" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alif-nur-imam-a2b7923a3" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/qr/SOOVIHP6EZADO1" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lifivyn?igsh=MXd6ZjFhMXJsdGFtMw==" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © Alif Nur Imam.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scroll');
+            } else {
+                navbar.classList.remove('navbar-scroll');
+            }
+        });
+    </script>
+</body>
+</html>

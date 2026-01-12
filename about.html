@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang - Alif Nur Imam</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Work Sans', sans-serif;
+        }
+        
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-scroll {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 transition-all duration-300 navbar-scroll" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">A</span>
+                    </div>
+                    <span class="ml-3 text-xl font-bold text-gray-800">Alif</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Beranda</a>
+                    <a href="about.html" class="text-blue-600 font-medium">Tentang</a>
+                    <a href="project.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Proyek</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Kontak</a>
+                </div>
+                
+                <a href="contact.html" class="bg-gradient-primary text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity">
+                    Hubungi Saya
+                </a>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-white rounded-lg shadow-lg mt-2 p-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Beranda</a>
+                <a href="about.html" class="block py-2 text-blue-600">Tentang</a>
+                <a href="project.html" class="block py-2 text-gray-700 hover:text-blue-600">Proyek</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-blue-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="pt-24 pb-12 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                Tentang <span class="text-gradient">Saya</span>
+            </h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Developer yang bersemangat dengan kecintaan untuk menciptakan pengalaman web yang indah dan fungsional.
+            </p>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="w-80 h-96 rounded-3xl shadow-2xl overflow-hidden mx-auto">
+                        <img src="formal.jpeg" alt="Alif Nur Imam" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Tentang Saya</h2>
+                    <h3 class="text-2xl font-semibold text-gradient mb-4">Halo! Saya seorang Developer</h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Saya adalah seorang developer yang passionate dalam teknologi dan selalu eager untuk belajar hal-hal baru. Dengan pengalaman dalam berbagai bahasa pemrograman dan framework, saya senang menciptakan solusi yang efisien dan user-friendly.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">Pendidikan</h4>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-graduation-cap text-blue-600 mr-3"></i>SMK Jurusan Rekayasa Perangkat Lunak</li>
+                            <li class="flex items-center"><i class="fas fa-certificate text-blue-600 mr-3"></i>Berbagai kursus online dan sertifikasi</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">Pengalaman</h4>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-briefcase text-blue-600 mr-3"></i>Praktek Kerja Lapangan (PKL)</li>
+                            <li class="flex items-center"><i class="fas fa-laptop-code text-blue-600 mr-3"></i>Freelance Web Developer</li>
+                            <li class="flex items-center"><i class="fas fa-project-diagram text-blue-600 mr-3"></i>Personal Projects</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Frontend</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Tailwind CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Backend</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>MySQL</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Keahlian Saya</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Teknologi dan tools yang saya kuasai dalam pengembangan web.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-html5 text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">HTML</h3>
+                    <p class="text-gray-600">Struktur dan markup untuk membangun halaman web yang semantik.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-css3-alt text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">CSS</h3>
+                    <p class="text-gray-600">Styling dan layout untuk menciptakan tampilan yang menarik dan responsif.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-php text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">PHP</h3>
+                    <p class="text-gray-600">Bahasa pemrograman server-side untuk membangun aplikasi web dinamis.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-database text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">MySQL</h3>
+                    <p class="text-gray-600">Sistem manajemen database untuk menyimpan dan mengelola data aplikasi.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-laravel text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Laravel</h3>
+                    <p class="text-gray-600">Framework PHP modern untuk pengembangan aplikasi web yang cepat dan aman.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-js-square text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">JavaScript</h3>
+                    <p class="text-gray-600">Bahasa pemrograman untuk membuat interaksi dinamis pada halaman web.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-bootstrap text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Bootstrap</h3>
+                    <p class="text-gray-600">Framework CSS untuk membangun tampilan web yang responsif dan modern.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-git-alt text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Git</h3>
+                    <p class="text-gray-600">Sistem kontrol versi untuk mengelola dan melacak perubahan kode.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Pengalaman & Pencapaian</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Perjalanan karir dan pencapaian yang telah saya raih dalam bidang pengembangan web.
+                </p>
+            </div>
+            
+            <div class="relative">
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-primary"></div>
+                
+                <div class="space-y-12">
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Freelance Web Developer</h3>
+                                <p class="text-blue-600 font-medium mb-3">2024 - Sekarang</p>
+                                <p class="text-gray-600">Mengembangkan website untuk UMKM lokal dan sistem informasi sederhana menggunakan Laravel dan PHP.</p>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-gradient-primary rounded-full relative z-10"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="w-4 h-4 bg-gradient-primary rounded-full relative z-10"></div>
+                        <div class="w-1/2 pl-8">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Praktek Kerja Lapangan (PKL)</h3>
+                                <p class="text-blue-600 font-medium mb-3">2024</p>
+                                <p class="text-gray-600">Mengembangkan sistem SPMB dan mempelajari workflow pengembangan aplikasi web di lingkungan profesional.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Siswa RPL</h3>
+                                <p class="text-blue-600 font-medium mb-3">2023 - 2025</p>
+                                <p class="text-gray-600">Mempelajari dasar-dasar pemrograman, database, dan pengembangan aplikasi web di SMK Jurusan Rekayasa Perangkat Lunak.</p>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-gradient-primary rounded-full relative z-10"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Prestasi & Pencapaian</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Prestasi olahraga dan pencapaian yang telah saya raih.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-basketball-ball text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Runner Up Basket Merdeka</h3>
+                    <p class="text-gray-600 mb-3">Juara 2 Turnamen Basket Merdeka Ala Kita</p>
+                    <span class="text-sm text-orange-600 font-medium">2024</span>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-trophy text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Juara 3 Ramadhan Cup</h3>
+                    <p class="text-gray-600 mb-3">Juara 3 Turnamen Basket Ramadhan Cup</p>
+                    <span class="text-sm text-yellow-600 font-medium">2024</span>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-medal text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Atlet Basket Sekolah</h3>
+                    <p class="text-gray-600 mb-3">Anggota tim basket sekolah dan aktif dalam berbagai kompetisi</p>
+                    <span class="text-sm text-blue-600 font-medium">2023-Sekarang</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">A</span>
+                        </div>
+                        <span class="ml-3 text-xl font-bold">Alif Nur Imam</span>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://github.com/liploppp" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alif-nur-imam-a2b7923a3" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/qr/SOOVIHP6EZADO1" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lifivyn?igsh=MXd6ZjFhMXJsdGFtMw==" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © Alif Nur Imam.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
